@@ -1,5 +1,5 @@
 //
-//  SetColumn.swift
+//  SetColumnLabel.swift
 //  gym-time
 //
 //  Created by Euan Widjaja on 18/06/23.
@@ -11,7 +11,7 @@ private enum Dimensions {
     static let setColumnPadding = EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
 }
 
-struct SetColumn: View {
+struct SetColumnLabel: View {
     var body: some View {
         HStack {
             Image(systemName: "checkmark.diamond")
@@ -31,14 +31,16 @@ struct SetLabel: View {
     var body: some View {
         Text("\(label)")
             .font(
-                .headline
-                .weight(.semibold)
-                .italic()
+                .custom(
+                    "Epilogue-BoldItalic",
+                    size: 16,
+                    relativeTo: .headline
+                )
             )
     }
 }
 
 #Preview {
-    SetColumn()
+    SetColumnLabel()
         .padding()
 }

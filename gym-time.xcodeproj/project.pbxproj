@@ -12,10 +12,14 @@
 		EA55A19B2A35CF44004ADE81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA55A19A2A35CF44004ADE81 /* Assets.xcassets */; };
 		EA55A19E2A35CF44004ADE81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA55A19D2A35CF44004ADE81 /* Preview Assets.xcassets */; };
 		EA55A1A02A35CF44004ADE81 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55A19F2A35CF44004ADE81 /* Workout.swift */; };
+		EAD62A352A53BC61003C054A /* Cubano.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD62A342A53BC61003C054A /* Cubano.ttf */; };
+		EAD62A3D2A53BD25003C054A /* Epilogue-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD62A392A53BD25003C054A /* Epilogue-SemiBold.ttf */; };
+		EAD62A3F2A53BE0A003C054A /* Epilogue-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD62A3E2A53BE0A003C054A /* Epilogue-BoldItalic.ttf */; };
+		EAD62A422A53CDEE003C054A /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD62A412A53CDEE003C054A /* WorkoutView.swift */; };
 		EAFE82482A3E94EA003F64FC /* SetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82472A3E94EA003F64FC /* SetRow.swift */; };
-		EAFE824A2A3F02FD003F64FC /* SetColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82492A3F02FD003F64FC /* SetColumn.swift */; };
-		EAFE824D2A3F03D6003F64FC /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824C2A3F03D6003F64FC /* SetCard.swift */; };
-		EAFE824F2A3F05FF003F64FC /* SetTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824E2A3F05FF003F64FC /* SetTitles.swift */; };
+		EAFE824A2A3F02FD003F64FC /* SetColumnLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */; };
+		EAFE824D2A3F03D6003F64FC /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */; };
+		EAFE824F2A3F05FF003F64FC /* ExerciseTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +29,15 @@
 		EA55A19A2A35CF44004ADE81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA55A19D2A35CF44004ADE81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA55A19F2A35CF44004ADE81 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Workout.swift; path = ../Workout.swift; sourceTree = "<group>"; };
+		EAD62A2E2A53B77B003C054A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EAD62A342A53BC61003C054A /* Cubano.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cubano.ttf; sourceTree = "<group>"; };
+		EAD62A392A53BD25003C054A /* Epilogue-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-SemiBold.ttf"; sourceTree = "<group>"; };
+		EAD62A3E2A53BE0A003C054A /* Epilogue-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EAD62A412A53CDEE003C054A /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		EAFE82472A3E94EA003F64FC /* SetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRow.swift; sourceTree = "<group>"; };
-		EAFE82492A3F02FD003F64FC /* SetColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColumn.swift; sourceTree = "<group>"; };
-		EAFE824C2A3F03D6003F64FC /* SetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCard.swift; sourceTree = "<group>"; };
-		EAFE824E2A3F05FF003F64FC /* SetTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTitles.swift; sourceTree = "<group>"; };
+		EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColumnLabel.swift; sourceTree = "<group>"; };
+		EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
+		EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +78,13 @@
 		EA55A1952A35CF43004ADE81 /* gym-time */ = {
 			isa = PBXGroup;
 			children = (
+				EAD62A2B2A53B6EC003C054A /* Fonts */,
 				EAFE824B2A3F03C5003F64FC /* Views */,
 				EA2571552A3876DC005FCB37 /* Model */,
 				EA55A1962A35CF43004ADE81 /* gym_timeApp.swift */,
 				EA55A1982A35CF43004ADE81 /* ContentView.swift */,
 				EA55A19A2A35CF44004ADE81 /* Assets.xcassets */,
+				EAD62A2E2A53B77B003C054A /* Info.plist */,
 				EA55A19C2A35CF44004ADE81 /* Preview Content */,
 			);
 			path = "gym-time";
@@ -87,13 +98,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EAD62A2B2A53B6EC003C054A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EAD62A402A53BE23003C054A /* Epilogue */,
+				EAD62A342A53BC61003C054A /* Cubano.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EAD62A402A53BE23003C054A /* Epilogue */ = {
+			isa = PBXGroup;
+			children = (
+				EAD62A3E2A53BE0A003C054A /* Epilogue-BoldItalic.ttf */,
+				EAD62A392A53BD25003C054A /* Epilogue-SemiBold.ttf */,
+			);
+			path = Epilogue;
+			sourceTree = "<group>";
+		};
 		EAFE824B2A3F03C5003F64FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE824C2A3F03D6003F64FC /* SetCard.swift */,
-				EAFE82492A3F02FD003F64FC /* SetColumn.swift */,
+				EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */,
+				EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */,
+				EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */,
 				EAFE82472A3E94EA003F64FC /* SetRow.swift */,
-				EAFE824E2A3F05FF003F64FC /* SetTitles.swift */,
+				EAD62A412A53CDEE003C054A /* WorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,7 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55A19E2A35CF44004ADE81 /* Preview Assets.xcassets in Resources */,
+				EAD62A352A53BC61003C054A /* Cubano.ttf in Resources */,
 				EA55A19B2A35CF44004ADE81 /* Assets.xcassets in Resources */,
+				EAD62A3F2A53BE0A003C054A /* Epilogue-BoldItalic.ttf in Resources */,
+				EAD62A3D2A53BD25003C054A /* Epilogue-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,13 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFE824D2A3F03D6003F64FC /* SetCard.swift in Sources */,
+				EAFE824D2A3F03D6003F64FC /* ExerciseCard.swift in Sources */,
 				EA55A1992A35CF43004ADE81 /* ContentView.swift in Sources */,
+				EAD62A422A53CDEE003C054A /* WorkoutView.swift in Sources */,
 				EA55A1A02A35CF44004ADE81 /* Workout.swift in Sources */,
-				EAFE824F2A3F05FF003F64FC /* SetTitles.swift in Sources */,
+				EAFE824F2A3F05FF003F64FC /* ExerciseTitle.swift in Sources */,
 				EA55A1972A35CF43004ADE81 /* gym_timeApp.swift in Sources */,
 				EAFE82482A3E94EA003F64FC /* SetRow.swift in Sources */,
-				EAFE824A2A3F02FD003F64FC /* SetColumn.swift in Sources */,
+				EAFE824A2A3F02FD003F64FC /* SetColumnLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +345,7 @@
 				DEVELOPMENT_TEAM = G6QHWVV324;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gym-time/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,6 +375,7 @@
 				DEVELOPMENT_TEAM = G6QHWVV324;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "gym-time/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

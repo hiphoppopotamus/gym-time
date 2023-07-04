@@ -13,14 +13,8 @@ struct ContentView: View {
     @Query private var workouts: [Workout]
     
     var body: some View {
-        VStack() {
-            Text("Push Day Baby")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                .bold()
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(.red)
-        .padding()
+        ExerciseCard()
+            .padding()
     }
 }
 

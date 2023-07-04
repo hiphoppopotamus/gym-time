@@ -5,14 +5,15 @@
 //  Created by Euan Widjaja on 11/06/23.
 //
 
-import Foundation
 import SwiftData
 
 @Model
-final class Workout {
-    var name: String
+class Workout {
+    var title: String
+    var subtitle: String
     
-    init(name: String) {
-        self.name = name
+    init(title: String, subtitle: String) {
+        self.title = title
+        self.subtitle = subtitle
     }
 }

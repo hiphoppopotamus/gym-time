@@ -8,7 +8,8 @@
 import SwiftUI
 
 private enum Dimensions {
-    static let setRowPadding = EdgeInsets(top: 15, leading: 20, bottom: 15, trailing: 20)
+    // Bottom padding is slightly smaller to compensate for ingrained padding from font
+    static let setRowPadding = EdgeInsets(top: 15, leading: 20, bottom: 12, trailing: 20)
 }
 
 struct SetRow: View {
@@ -23,7 +24,7 @@ struct SetRow: View {
         }
         .padding(Dimensions.setRowPadding)
         .background(Color.gray.opacity(0.4))
-        .clipShape(RoundedRectangle(cornerRadius: 5.0))
+        .clipShape(RoundedRectangle(cornerRadius: 16.0))
     }
 }
 
@@ -34,15 +35,20 @@ struct SetInput: View {
     var body: some View {
         Text("\(quantity) ")
             .font(
-                .title
-                .weight(.semibold)
-                .italic()
-            ) +
+                .custom(
+                    "Epilogue-BoldItalic",
+                    size: 32,
+                    relativeTo: .title
+                )
+            )
+        +
         Text("\(unit)")
             .font(
-                .headline
-                .weight(.semibold)
-                .italic()
+                .custom(
+                    "Epilogue-BoldItalic",
+                    size: 16,
+                    relativeTo: .headline
+                )
             )
     }
 }

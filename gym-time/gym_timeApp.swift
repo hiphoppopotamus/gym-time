@@ -14,7 +14,9 @@ struct gym_timeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: [
+                    Workout.self
+                ])
         }
-        .modelContainer(for: Workout.self)
     }
 }

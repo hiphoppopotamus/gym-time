@@ -1,5 +1,5 @@
 //
-//  SetTitles.swift
+//  ExerciseTitle.swift
 //  gym-time
 //
 //  Created by Euan Widjaja on 18/06/23.
@@ -7,23 +7,29 @@
 
 import SwiftUI
 
-struct SetTitles: View {
+struct ExerciseTitle: View {
     let title: String
     let subtitle: String
     
     var body: some View {
-        HStack(spacing: 15.0) {
+        HStack(spacing: 12.0) {
             SetImage()
             VStack(alignment: .leading) {
                 Text(title)
                     .font(
-                        .title3
-                        .weight(.heavy)
+                        .custom(
+                            "Cubano",
+                            size: 18,
+                            relativeTo: .title3
+                        )
                     )
                 Text(subtitle)
                     .font(
-                        .footnote
-                        .weight(.semibold)
+                        .custom(
+                            "Epilogue-SemiBold",
+                            size: 14,
+                            relativeTo: .footnote
+                        )
                     )
             }
             Spacer()
@@ -36,13 +42,13 @@ struct SetImage: View {
     var body: some View {
         Rectangle()
             .foregroundStyle(Color.gray.opacity(0.4))
-            .frame(width: 60.0, height: 60.0)
-            .clipShape(RoundedRectangle(cornerRadius: 5.0))
+            .frame(width: 65.0, height: 65.0)
+            .clipShape(RoundedRectangle(cornerRadius: 12.0))
     }
 }
 
 #Preview {
-    SetTitles(
+    ExerciseTitle(
         title: "Overhead Dumbbell Press",
         subtitle: "3 sets • 10-12 reps • 14 kg "
     )
