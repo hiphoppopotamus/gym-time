@@ -14,14 +14,16 @@ private enum Dimensions {
 
 struct SetRow: View {
 
+    @Binding var labels: [String]
+
     var body: some View {
         HStack {
             Image(systemName: "checkmark.diamond")
                 .font(.title2)
-            Spacer()
-            SetInput(quantity: "10", unit: "reps")
-            Spacer()
-            SetInput(quantity: "15", unit: "kg")
+            ForEach(labels, id: \.self) { label in
+                Spacer()
+                SetInput(unit: label)
+            }
         }
         .padding(Dimensions.setRowPadding)
         .clipShape(
@@ -38,31 +40,36 @@ struct SetRow: View {
 }
 
 struct SetInput: View {
-    let quantity: String
     let unit: String
     
+    @State var quantity: String = "0"
+    
     var body: some View {
-        Text("\(quantity) ")
-            .font(
-                .custom(
-                    "Epilogue-BoldItalic",
-                    size: 32,
-                    relativeTo: .title
+        
+        HStack(alignment: .lastTextBaseline, spacing: 5.0) {
+            TextField("\(quantity)", text: $quantity)
+                .font(
+                    .custom(
+                        "Epilogue-BoldItalic",
+                        size: 32,
+                        relativeTo: .title
+                    )
                 )
-            )
-        +
-        Text("\(unit)")
-            .font(
-                .custom(
-                    "Epilogue-BoldItalic",
-                    size: 16,
-                    relativeTo: .headline
+                .multilineTextAlignment(.trailing)
+            
+            Text("\(unit)")
+                .font(
+                    .custom(
+                        "Epilogue-BoldItalic",
+                        size: 16,
+                        relativeTo: .headline
+                    )
                 )
-            )
+        }
     }
 }
 
 #Preview {
-    SetRow()
+    SetRow(labels: .constant(["reps", "kg"]))
         .padding()
 }

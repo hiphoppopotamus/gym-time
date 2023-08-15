@@ -9,17 +9,19 @@ import SwiftUI
 
 struct ExerciseCard: View {
     
+    @State var labels = ["reps", "kg"]
+    
     var body: some View {
         VStack(spacing: 8.0) {
             ExerciseTitle(
                 title: "Overhead Dumbbell Press",
                 subtitle: "3 sets • 10-12 reps • 14 kg"
             )
-            SetLabels()
+            SetLabels(labels: $labels)
             VStack(spacing: 8.0) {
-                SetRow()
-                SetRow()
-                SetRow()
+                SetRow(labels: $labels)
+                SetRow(labels: $labels)
+                SetRow(labels: $labels)
             }
         }
         .padding(15.0)

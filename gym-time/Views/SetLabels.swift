@@ -12,6 +12,9 @@ private enum Dimensions {
 }
 
 struct SetLabels: View {
+    
+    @Binding var labels: [String]
+    
     var body: some View {
         HStack {
             Image(systemName: "checkmark.diamond")
@@ -42,6 +45,6 @@ struct SetLabel: View {
 }
 
 #Preview {
-    SetLabels()
+    SetLabels(labels: .constant(["reps", "kg"]))
         .padding()
 }
