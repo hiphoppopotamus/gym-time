@@ -11,7 +11,7 @@ private enum Dimensions {
     static let setColumnPadding = EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
 }
 
-struct SetColumnLabel: View {
+struct SetLabels: View {
     var body: some View {
         HStack {
             Image(systemName: "checkmark.diamond")
@@ -22,6 +22,7 @@ struct SetColumnLabel: View {
             SetLabel(label: "kg")
         }
         .padding(Dimensions.setColumnPadding)
+        .foregroundStyle(Color("PrimaryColor"))
     }
 }
 
@@ -41,6 +42,6 @@ struct SetLabel: View {
 }
 
 #Preview {
-    SetColumnLabel()
+    SetLabels()
         .padding()
 }

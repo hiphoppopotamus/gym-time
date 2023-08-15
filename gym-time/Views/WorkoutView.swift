@@ -10,15 +10,20 @@ import SwiftUI
 struct WorkoutView: View {
     var body: some View {
         
-        ScrollView {
-            VStack {
-                ExerciseCard()
-                ExerciseCard()
-                ExerciseCard()
-                ExerciseCard()
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 15) {
+                    ExerciseCard()
+                    ExerciseCard()
+                    ExerciseCard()
+                    ExerciseCard()
+                }
+                .padding()
             }
-            .padding()
+            .navigationTitle("Booty day baby")
         }
+
+        
     }
 }
 

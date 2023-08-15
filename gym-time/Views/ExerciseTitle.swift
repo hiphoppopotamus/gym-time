@@ -12,7 +12,7 @@ struct ExerciseTitle: View {
     let subtitle: String
     
     var body: some View {
-        HStack(spacing: 12.0) {
+        HStack(spacing: 15.0) {
             SetImage()
             VStack(alignment: .leading) {
                 Text(title)
@@ -34,7 +34,7 @@ struct ExerciseTitle: View {
             }
             Spacer()
         }
-        
+        .foregroundStyle(Color("PrimaryColor"))
     }
 }
 

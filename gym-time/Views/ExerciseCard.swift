@@ -15,22 +15,19 @@ struct ExerciseCard: View {
                 title: "Overhead Dumbbell Press",
                 subtitle: "3 sets • 10-12 reps • 14 kg"
             )
-            SetColumnLabel()
-            VStack(spacing: 5.0) {
+            SetLabels()
+            VStack(spacing: 8.0) {
                 SetRow()
                 SetRow()
                 SetRow()
             }
         }
-        .padding(12.0)
+        .padding(15.0)
         .background(
             RoundedRectangle(cornerRadius: 24.0)
-                .fill(.white)
-                .shadow(color: .black.opacity(0.3), radius: 8.0)
+                .fill(Color("BackgroundColor"))
+                .shadow(color: Color("PrimaryColor").opacity(0.3), radius: 5.0)
         )
-        
-   
-
     }
 }
 

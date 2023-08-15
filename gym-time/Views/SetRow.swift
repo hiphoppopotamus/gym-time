@@ -13,6 +13,7 @@ private enum Dimensions {
 }
 
 struct SetRow: View {
+
     var body: some View {
         HStack {
             Image(systemName: "checkmark.diamond")
@@ -23,8 +24,16 @@ struct SetRow: View {
             SetInput(quantity: "15", unit: "kg")
         }
         .padding(Dimensions.setRowPadding)
-        .background(Color.gray.opacity(0.4))
-        .clipShape(RoundedRectangle(cornerRadius: 16.0))
+        .clipShape(
+            RoundedRectangle(cornerRadius: 16.0)
+        )
+        .background(
+            RoundedRectangle(cornerRadius: 16.0)
+                .stroke(Color("PrimaryColor"), lineWidth: 3.0)
+                .fill(Color("BackgroundColor"))
+                .shadow(color: Color("PrimaryColor").opacity(0.3), radius: 2.0)
+        )
+        .foregroundStyle(Color("PrimaryColor"))
     }
 }
 

@@ -17,7 +17,7 @@
 		EAD62A3F2A53BE0A003C054A /* Epilogue-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAD62A3E2A53BE0A003C054A /* Epilogue-BoldItalic.ttf */; };
 		EAD62A422A53CDEE003C054A /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD62A412A53CDEE003C054A /* WorkoutView.swift */; };
 		EAFE82482A3E94EA003F64FC /* SetRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82472A3E94EA003F64FC /* SetRow.swift */; };
-		EAFE824A2A3F02FD003F64FC /* SetColumnLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */; };
+		EAFE824A2A3F02FD003F64FC /* SetLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE82492A3F02FD003F64FC /* SetLabels.swift */; };
 		EAFE824D2A3F03D6003F64FC /* ExerciseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */; };
 		EAFE824F2A3F05FF003F64FC /* ExerciseTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		EAD62A3E2A53BE0A003C054A /* Epilogue-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Epilogue-BoldItalic.ttf"; sourceTree = "<group>"; };
 		EAD62A412A53CDEE003C054A /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 		EAFE82472A3E94EA003F64FC /* SetRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetRow.swift; sourceTree = "<group>"; };
-		EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColumnLabel.swift; sourceTree = "<group>"; };
+		EAFE82492A3F02FD003F64FC /* SetLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetLabels.swift; sourceTree = "<group>"; };
 		EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCard.swift; sourceTree = "<group>"; };
 		EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +121,7 @@
 			children = (
 				EAFE824C2A3F03D6003F64FC /* ExerciseCard.swift */,
 				EAFE824E2A3F05FF003F64FC /* ExerciseTitle.swift */,
-				EAFE82492A3F02FD003F64FC /* SetColumnLabel.swift */,
+				EAFE82492A3F02FD003F64FC /* SetLabels.swift */,
 				EAFE82472A3E94EA003F64FC /* SetRow.swift */,
 				EAD62A412A53CDEE003C054A /* WorkoutView.swift */,
 			);
@@ -208,7 +208,7 @@
 				EAFE824F2A3F05FF003F64FC /* ExerciseTitle.swift in Sources */,
 				EA55A1972A35CF43004ADE81 /* gym_timeApp.swift in Sources */,
 				EAFE82482A3E94EA003F64FC /* SetRow.swift in Sources */,
-				EAFE824A2A3F02FD003F64FC /* SetColumnLabel.swift in Sources */,
+				EAFE824A2A3F02FD003F64FC /* SetLabels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
